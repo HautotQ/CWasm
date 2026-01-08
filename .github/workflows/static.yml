@@ -25,7 +25,7 @@ jobs:
       - name: Build WASM
         run: |
           mkdir dist
-          emcc hello.c -o dist/index.html
+          emcc main.c -o dist/index.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
